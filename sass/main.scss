@@ -78,6 +78,38 @@ body {
     }
 }
 
+.section-first {
+    margin-top: 50px;
+
+    &__article-1 {
+       float: left;
+       margin-left: 10%;
+       margin-top: 50px;
+       width: 40%;
+
+       h1 {
+           font-size: 50px;
+           margin-bottom: 15px;
+       }
+
+       p {
+           font-size: 20px;
+           line-height: 1.7;
+           padding-bottom: 15px;
+       }
+
+       .btn-blue {
+           background-color: hsl(231, 69%, 60%);
+           color: #fff;
+       }
+
+       .btn-grey {
+           background-color: rgb(228, 228, 228);
+           color: rgb(70, 70, 70);
+    }
+    }
+}
+
 
 
 
