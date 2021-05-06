@@ -14,11 +14,13 @@ body {
 
 .header {
     font-size: 15px;
-    width: 80%;
-    margin: 20px auto;
-
-    &__logo {
-        float: left;
+    margin: 20px;
+    .header__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 90rem;
+        margin: auto;
     }
 }
 
@@ -78,35 +80,53 @@ body {
     }
 }
 
-.section-first {
-    margin-top: 50px;
-
-    &__article-1 {
-       float: left;
-       margin-left: 10%;
-       margin-top: 50px;
-       width: 40%;
-
-       h1 {
-           font-size: 50px;
-           margin-bottom: 15px;
-       }
-
-       p {
-           font-size: 20px;
-           line-height: 1.7;
-           padding-bottom: 15px;
-       }
-
-       .btn-blue {
-           background-color: hsl(231, 69%, 60%);
-           color: #fff;
-       }
-
-       .btn-grey {
-           background-color: rgb(228, 228, 228);
-           color: rgb(70, 70, 70);
-    }
+.container {
+    max-width: 90rem;
+    margin: 0 20px;
+    padding-top: 50px;
+    .section-first {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    
+        &__article-1 {
+           h1 {
+               font-size: 50px;
+               margin-bottom: 15px;
+           }
+    
+           p {
+               font-size: 20px;
+               line-height: 1.7;
+               padding-bottom: 15px;
+           }
+    
+           .btn-blue {
+               background-color: hsl(231, 69%, 60%);
+               color: #fff;
+           }
+    
+           .btn-grey {
+               background-color: rgb(228, 228, 228);
+               color: rgb(70, 70, 70);
+            }
+        }
+        &__article-2 {
+            position: relative;
+            svg {
+                z-index: 1;
+                position: relative;
+            }
+            &-block {
+                position: absolute;
+                height: 300px;
+                width: 400px;
+                background-color: #5368df;
+                border-bottom-left-radius: 50px;
+                bottom: 0;
+                right: 0;
+            }
+        }
     }
 }
 
