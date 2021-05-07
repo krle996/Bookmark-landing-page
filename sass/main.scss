@@ -26,12 +26,6 @@ body {
     }
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-    }
-
 .header__list {
     list-style-type: none;
     float: right;
@@ -65,21 +59,6 @@ body {
     margin-left: 10px;
     padding: 10px 25px;
     border-radius: 5px;
-
-    &__header:link,
-    &__header:visited {
-        text-transform: uppercase;
-        background-color: hsl(0, 94%, 66%);
-        border: 2px solid hsl(0, 94%, 66%);
-        color: #fff;
-    }
-
-    &__header:hover,
-    &__header:active {
-        background-color: #fff;
-        border: 2px solid hsl(0, 94%, 66%);
-        color: hsl(0, 94%, 66%);
-    }
 }
 
     .btn-blue:link,
@@ -94,6 +73,21 @@ body {
         background-color:#fff;
         border: 2px solid hsl(231, 69%, 60%);
         color: hsl(231, 69%, 60%);
+    }
+
+    .btn-red:link,
+    .btn-red:visited {
+        text-transform: uppercase;
+        background-color: hsl(0, 94%, 66%);
+        border: 2px solid hsl(0, 94%, 66%);
+        color: #fff;
+    }
+
+    .btn-red:hover,
+    .btn-red:active {
+        background-color: #fff;
+        border: 2px solid hsl(0, 94%, 66%);
+        color: hsl(0, 94%, 66%);
     }
 
 .container {
@@ -339,6 +333,78 @@ body {
                         line-height: 1.7;
                     }
                 }
+            }
+        }
+    }
+}
+
+.footer {
+
+    .footer__contact-us {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #5368df;
+        color: #fff;
+        padding: 40px 0;
+
+        h1, h3 {
+            padding-bottom: 20px;
+        }
+
+        .footer__form {
+
+            input {
+                padding: 12px 25px;
+                border-radius: 5px;
+                width: 250px;
+            }
+
+            a {
+                text-transform: capitalize;
+            }
+        }
+    }
+
+    .footer__nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: auto;
+        background-color: #242A45;
+        padding: 10px 0;
+
+        .footer__nav-1 {
+            display: flex;
+            align-items: center;
+        }
+
+        .footer__list-1 {
+
+            li {
+                display: inline-block;
+                margin-left: 10px;
+                padding: 12px 20px;
+                border-radius: 5px;
+
+                a {
+                    color: #fff;
+                }
+
+                a:hover,
+                a:active {
+                    color: hsl(0, 94%, 66%);
+                }
+            }
+        }
+
+        .footer__list-2 {
+
+            li {
+                display: inline-block;
+                margin-left: 10px;
+                padding: 12px 20px;
             }
         }
     }
