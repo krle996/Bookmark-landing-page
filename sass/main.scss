@@ -282,6 +282,66 @@ body {
             }
         }
     }
+
+    .section-faq {
+
+        .section-faq__holder {
+
+            .section-faq__holder-title {
+                text-align: center;
+                width: 500px;
+                margin: auto;
+                margin-bottom: 30px;
+
+                h1 {
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    font-size: 20px;
+                    line-height: 1.7;
+                }
+            }
+
+            .section-faq__accordion {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                
+
+                .section-faq__accordion-question {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #fff;
+                    color: #444;
+                    cursor: pointer;
+                    padding: 18px;
+                    padding-left: 0;
+                    width: 40%;
+                    border-bottom: 1px solid rgb(170, 170, 170);
+                    text-align: left;
+                    outline: none;
+                }
+
+                .section-faq__accordion-question:first-child {
+                    border-top: 1px solid rgb(170, 170, 170);
+                }
+
+                .section-faq__accordion-answer {
+                    padding: 18px;
+                    padding-left: 0;
+                    background-color: #fff;
+                    width: 40%;
+                    display: none;
+
+                    p {
+                        line-height: 1.7;
+                    }
+                }
+            }
+        }
+    }
 }
 
 
